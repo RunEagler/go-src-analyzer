@@ -1,0 +1,1454 @@
+     0  *ast.GenDecl {
+     1  .  Doc: nil
+     2  .  TokPos: ./testdata/func.src.go:3:1
+     3  .  Tok: import
+     4  .  Lparen: ./testdata/func.src.go:3:8
+     5  .  Specs: []ast.Spec (len = 2) {
+     6  .  .  0: *ast.ImportSpec {
+     7  .  .  .  Doc: nil
+     8  .  .  .  Name: nil
+     9  .  .  .  Path: *ast.BasicLit {
+    10  .  .  .  .  ValuePos: ./testdata/func.src.go:4:2
+    11  .  .  .  .  Kind: STRING
+    12  .  .  .  .  Value: "\"time\""
+    13  .  .  .  }
+    14  .  .  .  Comment: nil
+    15  .  .  .  EndPos: -
+    16  .  .  }
+    17  .  .  1: *ast.ImportSpec {
+    18  .  .  .  Doc: nil
+    19  .  .  .  Name: nil
+    20  .  .  .  Path: *ast.BasicLit {
+    21  .  .  .  .  ValuePos: ./testdata/func.src.go:5:2
+    22  .  .  .  .  Kind: STRING
+    23  .  .  .  .  Value: "\"fmt\""
+    24  .  .  .  }
+    25  .  .  .  Comment: nil
+    26  .  .  .  EndPos: -
+    27  .  .  }
+    28  .  }
+    29  .  Rparen: ./testdata/func.src.go:6:1
+    30  }
+     0  *ast.GenDecl {
+     1  .  Doc: nil
+     2  .  TokPos: ./testdata/func.src.go:8:1
+     3  .  Tok: type
+     4  .  Lparen: -
+     5  .  Specs: []ast.Spec (len = 1) {
+     6  .  .  0: *ast.TypeSpec {
+     7  .  .  .  Doc: nil
+     8  .  .  .  Name: *ast.Ident {
+     9  .  .  .  .  NamePos: ./testdata/func.src.go:8:6
+    10  .  .  .  .  Name: "sampleStruct"
+    11  .  .  .  .  Obj: *ast.Object {
+    12  .  .  .  .  .  Kind: type
+    13  .  .  .  .  .  Name: "sampleStruct"
+    14  .  .  .  .  .  Decl: *(obj @ 6)
+    15  .  .  .  .  .  Data: nil
+    16  .  .  .  .  .  Type: nil
+    17  .  .  .  .  }
+    18  .  .  .  }
+    19  .  .  .  Assign: -
+    20  .  .  .  Type: *ast.StructType {
+    21  .  .  .  .  Struct: ./testdata/func.src.go:8:19
+    22  .  .  .  .  Fields: *ast.FieldList {
+    23  .  .  .  .  .  Opening: ./testdata/func.src.go:8:26
+    24  .  .  .  .  .  List: []*ast.Field (len = 2) {
+    25  .  .  .  .  .  .  0: *ast.Field {
+    26  .  .  .  .  .  .  .  Doc: nil
+    27  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+    28  .  .  .  .  .  .  .  .  0: *ast.Ident {
+    29  .  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:9:2
+    30  .  .  .  .  .  .  .  .  .  Name: "i"
+    31  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+    32  .  .  .  .  .  .  .  .  .  .  Kind: var
+    33  .  .  .  .  .  .  .  .  .  .  Name: "i"
+    34  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 25)
+    35  .  .  .  .  .  .  .  .  .  .  Data: nil
+    36  .  .  .  .  .  .  .  .  .  .  Type: nil
+    37  .  .  .  .  .  .  .  .  .  }
+    38  .  .  .  .  .  .  .  .  }
+    39  .  .  .  .  .  .  .  }
+    40  .  .  .  .  .  .  .  Type: *ast.Ident {
+    41  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:9:4
+    42  .  .  .  .  .  .  .  .  Name: "int"
+    43  .  .  .  .  .  .  .  .  Obj: nil
+    44  .  .  .  .  .  .  .  }
+    45  .  .  .  .  .  .  .  Tag: nil
+    46  .  .  .  .  .  .  .  Comment: nil
+    47  .  .  .  .  .  .  }
+    48  .  .  .  .  .  .  1: *ast.Field {
+    49  .  .  .  .  .  .  .  Doc: nil
+    50  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+    51  .  .  .  .  .  .  .  .  0: *ast.Ident {
+    52  .  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:10:2
+    53  .  .  .  .  .  .  .  .  .  Name: "s"
+    54  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+    55  .  .  .  .  .  .  .  .  .  .  Kind: var
+    56  .  .  .  .  .  .  .  .  .  .  Name: "s"
+    57  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 48)
+    58  .  .  .  .  .  .  .  .  .  .  Data: nil
+    59  .  .  .  .  .  .  .  .  .  .  Type: nil
+    60  .  .  .  .  .  .  .  .  .  }
+    61  .  .  .  .  .  .  .  .  }
+    62  .  .  .  .  .  .  .  }
+    63  .  .  .  .  .  .  .  Type: *ast.Ident {
+    64  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:10:4
+    65  .  .  .  .  .  .  .  .  Name: "string"
+    66  .  .  .  .  .  .  .  .  Obj: nil
+    67  .  .  .  .  .  .  .  }
+    68  .  .  .  .  .  .  .  Tag: nil
+    69  .  .  .  .  .  .  .  Comment: nil
+    70  .  .  .  .  .  .  }
+    71  .  .  .  .  .  }
+    72  .  .  .  .  .  Closing: ./testdata/func.src.go:11:1
+    73  .  .  .  .  }
+    74  .  .  .  .  Incomplete: false
+    75  .  .  .  }
+    76  .  .  .  Comment: nil
+    77  .  .  }
+    78  .  }
+    79  .  Rparen: -
+    80  }
+     0  *ast.GenDecl {
+     1  .  Doc: nil
+     2  .  TokPos: ./testdata/func.src.go:13:1
+     3  .  Tok: type
+     4  .  Lparen: -
+     5  .  Specs: []ast.Spec (len = 1) {
+     6  .  .  0: *ast.TypeSpec {
+     7  .  .  .  Doc: nil
+     8  .  .  .  Name: *ast.Ident {
+     9  .  .  .  .  NamePos: ./testdata/func.src.go:13:6
+    10  .  .  .  .  Name: "constType"
+    11  .  .  .  .  Obj: *ast.Object {
+    12  .  .  .  .  .  Kind: type
+    13  .  .  .  .  .  Name: "constType"
+    14  .  .  .  .  .  Decl: *(obj @ 6)
+    15  .  .  .  .  .  Data: nil
+    16  .  .  .  .  .  Type: nil
+    17  .  .  .  .  }
+    18  .  .  .  }
+    19  .  .  .  Assign: -
+    20  .  .  .  Type: *ast.Ident {
+    21  .  .  .  .  NamePos: ./testdata/func.src.go:13:16
+    22  .  .  .  .  Name: "int"
+    23  .  .  .  .  Obj: nil
+    24  .  .  .  }
+    25  .  .  .  Comment: nil
+    26  .  .  }
+    27  .  }
+    28  .  Rparen: -
+    29  }
+     0  *ast.GenDecl {
+     1  .  Doc: nil
+     2  .  TokPos: ./testdata/func.src.go:15:1
+     3  .  Tok: const
+     4  .  Lparen: ./testdata/func.src.go:15:7
+     5  .  Specs: []ast.Spec (len = 3) {
+     6  .  .  0: *ast.ValueSpec {
+     7  .  .  .  Doc: nil
+     8  .  .  .  Names: []*ast.Ident (len = 1) {
+     9  .  .  .  .  0: *ast.Ident {
+    10  .  .  .  .  .  NamePos: ./testdata/func.src.go:16:2
+    11  .  .  .  .  .  Name: "A"
+    12  .  .  .  .  .  Obj: *ast.Object {
+    13  .  .  .  .  .  .  Kind: const
+    14  .  .  .  .  .  .  Name: "A"
+    15  .  .  .  .  .  .  Decl: *(obj @ 6)
+    16  .  .  .  .  .  .  Data: 0
+    17  .  .  .  .  .  .  Type: nil
+    18  .  .  .  .  .  }
+    19  .  .  .  .  }
+    20  .  .  .  }
+    21  .  .  .  Type: *ast.Ident {
+    22  .  .  .  .  NamePos: ./testdata/func.src.go:16:4
+    23  .  .  .  .  Name: "constType"
+    24  .  .  .  .  Obj: *ast.Object {
+    25  .  .  .  .  .  Kind: type
+    26  .  .  .  .  .  Name: "constType"
+    27  .  .  .  .  .  Decl: *ast.TypeSpec {
+    28  .  .  .  .  .  .  Doc: nil
+    29  .  .  .  .  .  .  Name: *ast.Ident {
+    30  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:13:6
+    31  .  .  .  .  .  .  .  Name: "constType"
+    32  .  .  .  .  .  .  .  Obj: *(obj @ 24)
+    33  .  .  .  .  .  .  }
+    34  .  .  .  .  .  .  Assign: -
+    35  .  .  .  .  .  .  Type: *ast.Ident {
+    36  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:13:16
+    37  .  .  .  .  .  .  .  Name: "int"
+    38  .  .  .  .  .  .  .  Obj: nil
+    39  .  .  .  .  .  .  }
+    40  .  .  .  .  .  .  Comment: nil
+    41  .  .  .  .  .  }
+    42  .  .  .  .  .  Data: nil
+    43  .  .  .  .  .  Type: nil
+    44  .  .  .  .  }
+    45  .  .  .  }
+    46  .  .  .  Values: []ast.Expr (len = 1) {
+    47  .  .  .  .  0: *ast.Ident {
+    48  .  .  .  .  .  NamePos: ./testdata/func.src.go:16:16
+    49  .  .  .  .  .  Name: "iota"
+    50  .  .  .  .  .  Obj: nil
+    51  .  .  .  .  }
+    52  .  .  .  }
+    53  .  .  .  Comment: nil
+    54  .  .  }
+    55  .  .  1: *ast.ValueSpec {
+    56  .  .  .  Doc: nil
+    57  .  .  .  Names: []*ast.Ident (len = 1) {
+    58  .  .  .  .  0: *ast.Ident {
+    59  .  .  .  .  .  NamePos: ./testdata/func.src.go:17:2
+    60  .  .  .  .  .  Name: "B"
+    61  .  .  .  .  .  Obj: *ast.Object {
+    62  .  .  .  .  .  .  Kind: const
+    63  .  .  .  .  .  .  Name: "B"
+    64  .  .  .  .  .  .  Decl: *(obj @ 55)
+    65  .  .  .  .  .  .  Data: 1
+    66  .  .  .  .  .  .  Type: nil
+    67  .  .  .  .  .  }
+    68  .  .  .  .  }
+    69  .  .  .  }
+    70  .  .  .  Type: nil
+    71  .  .  .  Values: nil
+    72  .  .  .  Comment: nil
+    73  .  .  }
+    74  .  .  2: *ast.ValueSpec {
+    75  .  .  .  Doc: nil
+    76  .  .  .  Names: []*ast.Ident (len = 1) {
+    77  .  .  .  .  0: *ast.Ident {
+    78  .  .  .  .  .  NamePos: ./testdata/func.src.go:18:2
+    79  .  .  .  .  .  Name: "C"
+    80  .  .  .  .  .  Obj: *ast.Object {
+    81  .  .  .  .  .  .  Kind: const
+    82  .  .  .  .  .  .  Name: "C"
+    83  .  .  .  .  .  .  Decl: *(obj @ 74)
+    84  .  .  .  .  .  .  Data: 2
+    85  .  .  .  .  .  .  Type: nil
+    86  .  .  .  .  .  }
+    87  .  .  .  .  }
+    88  .  .  .  }
+    89  .  .  .  Type: nil
+    90  .  .  .  Values: nil
+    91  .  .  .  Comment: nil
+    92  .  .  }
+    93  .  }
+    94  .  Rparen: ./testdata/func.src.go:19:1
+    95  }
+     0  *ast.FuncDecl {
+     1  .  Doc: nil
+     2  .  Recv: nil
+     3  .  Name: *ast.Ident {
+     4  .  .  NamePos: ./testdata/func.src.go:21:6
+     5  .  .  Name: "test1"
+     6  .  .  Obj: *ast.Object {
+     7  .  .  .  Kind: func
+     8  .  .  .  Name: "test1"
+     9  .  .  .  Decl: *(obj @ 0)
+    10  .  .  .  Data: nil
+    11  .  .  .  Type: nil
+    12  .  .  }
+    13  .  }
+    14  .  Type: *ast.FuncType {
+    15  .  .  Func: ./testdata/func.src.go:21:1
+    16  .  .  Params: *ast.FieldList {
+    17  .  .  .  Opening: ./testdata/func.src.go:21:11
+    18  .  .  .  List: nil
+    19  .  .  .  Closing: ./testdata/func.src.go:21:12
+    20  .  .  }
+    21  .  .  Results: nil
+    22  .  }
+    23  .  Body: *ast.BlockStmt {
+    24  .  .  Lbrace: ./testdata/func.src.go:21:14
+    25  .  .  List: nil
+    26  .  .  Rbrace: ./testdata/func.src.go:23:1
+    27  .  }
+    28  }
+     0  *ast.FuncDecl {
+     1  .  Doc: nil
+     2  .  Recv: nil
+     3  .  Name: *ast.Ident {
+     4  .  .  NamePos: ./testdata/func.src.go:25:6
+     5  .  .  Name: "test2"
+     6  .  .  Obj: *ast.Object {
+     7  .  .  .  Kind: func
+     8  .  .  .  Name: "test2"
+     9  .  .  .  Decl: *(obj @ 0)
+    10  .  .  .  Data: nil
+    11  .  .  .  Type: nil
+    12  .  .  }
+    13  .  }
+    14  .  Type: *ast.FuncType {
+    15  .  .  Func: ./testdata/func.src.go:25:1
+    16  .  .  Params: *ast.FieldList {
+    17  .  .  .  Opening: ./testdata/func.src.go:25:11
+    18  .  .  .  List: []*ast.Field (len = 1) {
+    19  .  .  .  .  0: *ast.Field {
+    20  .  .  .  .  .  Doc: nil
+    21  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+    22  .  .  .  .  .  .  0: *ast.Ident {
+    23  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:25:12
+    24  .  .  .  .  .  .  .  Name: "arg1"
+    25  .  .  .  .  .  .  .  Obj: *ast.Object {
+    26  .  .  .  .  .  .  .  .  Kind: var
+    27  .  .  .  .  .  .  .  .  Name: "arg1"
+    28  .  .  .  .  .  .  .  .  Decl: *(obj @ 19)
+    29  .  .  .  .  .  .  .  .  Data: nil
+    30  .  .  .  .  .  .  .  .  Type: nil
+    31  .  .  .  .  .  .  .  }
+    32  .  .  .  .  .  .  }
+    33  .  .  .  .  .  }
+    34  .  .  .  .  .  Type: *ast.Ident {
+    35  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:25:17
+    36  .  .  .  .  .  .  Name: "int"
+    37  .  .  .  .  .  .  Obj: nil
+    38  .  .  .  .  .  }
+    39  .  .  .  .  .  Tag: nil
+    40  .  .  .  .  .  Comment: nil
+    41  .  .  .  .  }
+    42  .  .  .  }
+    43  .  .  .  Closing: ./testdata/func.src.go:25:20
+    44  .  .  }
+    45  .  .  Results: *ast.FieldList {
+    46  .  .  .  Opening: ./testdata/func.src.go:25:22
+    47  .  .  .  List: []*ast.Field (len = 1) {
+    48  .  .  .  .  0: *ast.Field {
+    49  .  .  .  .  .  Doc: nil
+    50  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+    51  .  .  .  .  .  .  0: *ast.Ident {
+    52  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:25:23
+    53  .  .  .  .  .  .  .  Name: "err"
+    54  .  .  .  .  .  .  .  Obj: *ast.Object {
+    55  .  .  .  .  .  .  .  .  Kind: var
+    56  .  .  .  .  .  .  .  .  Name: "err"
+    57  .  .  .  .  .  .  .  .  Decl: *(obj @ 48)
+    58  .  .  .  .  .  .  .  .  Data: nil
+    59  .  .  .  .  .  .  .  .  Type: nil
+    60  .  .  .  .  .  .  .  }
+    61  .  .  .  .  .  .  }
+    62  .  .  .  .  .  }
+    63  .  .  .  .  .  Type: *ast.Ident {
+    64  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:25:27
+    65  .  .  .  .  .  .  Name: "error"
+    66  .  .  .  .  .  .  Obj: nil
+    67  .  .  .  .  .  }
+    68  .  .  .  .  .  Tag: nil
+    69  .  .  .  .  .  Comment: nil
+    70  .  .  .  .  }
+    71  .  .  .  }
+    72  .  .  .  Closing: ./testdata/func.src.go:25:32
+    73  .  .  }
+    74  .  }
+    75  .  Body: *ast.BlockStmt {
+    76  .  .  Lbrace: ./testdata/func.src.go:25:34
+    77  .  .  List: []ast.Stmt (len = 1) {
+    78  .  .  .  0: *ast.ReturnStmt {
+    79  .  .  .  .  Return: ./testdata/func.src.go:27:2
+    80  .  .  .  .  Results: []ast.Expr (len = 1) {
+    81  .  .  .  .  .  0: *ast.CallExpr {
+    82  .  .  .  .  .  .  Fun: *ast.SelectorExpr {
+    83  .  .  .  .  .  .  .  X: *ast.Ident {
+    84  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:27:9
+    85  .  .  .  .  .  .  .  .  Name: "fmt"
+    86  .  .  .  .  .  .  .  .  Obj: nil
+    87  .  .  .  .  .  .  .  }
+    88  .  .  .  .  .  .  .  Sel: *ast.Ident {
+    89  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:27:13
+    90  .  .  .  .  .  .  .  .  Name: "Errorf"
+    91  .  .  .  .  .  .  .  .  Obj: nil
+    92  .  .  .  .  .  .  .  }
+    93  .  .  .  .  .  .  }
+    94  .  .  .  .  .  .  Lparen: ./testdata/func.src.go:27:19
+    95  .  .  .  .  .  .  Args: []ast.Expr (len = 1) {
+    96  .  .  .  .  .  .  .  0: *ast.BasicLit {
+    97  .  .  .  .  .  .  .  .  ValuePos: ./testdata/func.src.go:27:20
+    98  .  .  .  .  .  .  .  .  Kind: STRING
+    99  .  .  .  .  .  .  .  .  Value: "\"\""
+   100  .  .  .  .  .  .  .  }
+   101  .  .  .  .  .  .  }
+   102  .  .  .  .  .  .  Ellipsis: -
+   103  .  .  .  .  .  .  Rparen: ./testdata/func.src.go:27:22
+   104  .  .  .  .  .  }
+   105  .  .  .  .  }
+   106  .  .  .  }
+   107  .  .  }
+   108  .  .  Rbrace: ./testdata/func.src.go:28:1
+   109  .  }
+   110  }
+     0  *ast.FuncDecl {
+     1  .  Doc: nil
+     2  .  Recv: nil
+     3  .  Name: *ast.Ident {
+     4  .  .  NamePos: ./testdata/func.src.go:30:6
+     5  .  .  Name: "test3"
+     6  .  .  Obj: *ast.Object {
+     7  .  .  .  Kind: func
+     8  .  .  .  Name: "test3"
+     9  .  .  .  Decl: *(obj @ 0)
+    10  .  .  .  Data: nil
+    11  .  .  .  Type: nil
+    12  .  .  }
+    13  .  }
+    14  .  Type: *ast.FuncType {
+    15  .  .  Func: ./testdata/func.src.go:30:1
+    16  .  .  Params: *ast.FieldList {
+    17  .  .  .  Opening: ./testdata/func.src.go:30:11
+    18  .  .  .  List: []*ast.Field (len = 20) {
+    19  .  .  .  .  0: *ast.Field {
+    20  .  .  .  .  .  Doc: nil
+    21  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+    22  .  .  .  .  .  .  0: *ast.Ident {
+    23  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:31:2
+    24  .  .  .  .  .  .  .  Name: "arg1"
+    25  .  .  .  .  .  .  .  Obj: *ast.Object {
+    26  .  .  .  .  .  .  .  .  Kind: var
+    27  .  .  .  .  .  .  .  .  Name: "arg1"
+    28  .  .  .  .  .  .  .  .  Decl: *(obj @ 19)
+    29  .  .  .  .  .  .  .  .  Data: nil
+    30  .  .  .  .  .  .  .  .  Type: nil
+    31  .  .  .  .  .  .  .  }
+    32  .  .  .  .  .  .  }
+    33  .  .  .  .  .  }
+    34  .  .  .  .  .  Type: *ast.Ident {
+    35  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:31:7
+    36  .  .  .  .  .  .  Name: "int"
+    37  .  .  .  .  .  .  Obj: nil
+    38  .  .  .  .  .  }
+    39  .  .  .  .  .  Tag: nil
+    40  .  .  .  .  .  Comment: nil
+    41  .  .  .  .  }
+    42  .  .  .  .  1: *ast.Field {
+    43  .  .  .  .  .  Doc: nil
+    44  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+    45  .  .  .  .  .  .  0: *ast.Ident {
+    46  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:32:2
+    47  .  .  .  .  .  .  .  Name: "arg2"
+    48  .  .  .  .  .  .  .  Obj: *ast.Object {
+    49  .  .  .  .  .  .  .  .  Kind: var
+    50  .  .  .  .  .  .  .  .  Name: "arg2"
+    51  .  .  .  .  .  .  .  .  Decl: *(obj @ 42)
+    52  .  .  .  .  .  .  .  .  Data: nil
+    53  .  .  .  .  .  .  .  .  Type: nil
+    54  .  .  .  .  .  .  .  }
+    55  .  .  .  .  .  .  }
+    56  .  .  .  .  .  }
+    57  .  .  .  .  .  Type: *ast.Ident {
+    58  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:32:7
+    59  .  .  .  .  .  .  Name: "string"
+    60  .  .  .  .  .  .  Obj: nil
+    61  .  .  .  .  .  }
+    62  .  .  .  .  .  Tag: nil
+    63  .  .  .  .  .  Comment: nil
+    64  .  .  .  .  }
+    65  .  .  .  .  2: *ast.Field {
+    66  .  .  .  .  .  Doc: nil
+    67  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+    68  .  .  .  .  .  .  0: *ast.Ident {
+    69  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:33:2
+    70  .  .  .  .  .  .  .  Name: "arg3"
+    71  .  .  .  .  .  .  .  Obj: *ast.Object {
+    72  .  .  .  .  .  .  .  .  Kind: var
+    73  .  .  .  .  .  .  .  .  Name: "arg3"
+    74  .  .  .  .  .  .  .  .  Decl: *(obj @ 65)
+    75  .  .  .  .  .  .  .  .  Data: nil
+    76  .  .  .  .  .  .  .  .  Type: nil
+    77  .  .  .  .  .  .  .  }
+    78  .  .  .  .  .  .  }
+    79  .  .  .  .  .  }
+    80  .  .  .  .  .  Type: *ast.ArrayType {
+    81  .  .  .  .  .  .  Lbrack: ./testdata/func.src.go:33:7
+    82  .  .  .  .  .  .  Len: nil
+    83  .  .  .  .  .  .  Elt: *ast.Ident {
+    84  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:33:9
+    85  .  .  .  .  .  .  .  Name: "int"
+    86  .  .  .  .  .  .  .  Obj: nil
+    87  .  .  .  .  .  .  }
+    88  .  .  .  .  .  }
+    89  .  .  .  .  .  Tag: nil
+    90  .  .  .  .  .  Comment: nil
+    91  .  .  .  .  }
+    92  .  .  .  .  3: *ast.Field {
+    93  .  .  .  .  .  Doc: nil
+    94  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+    95  .  .  .  .  .  .  0: *ast.Ident {
+    96  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:34:2
+    97  .  .  .  .  .  .  .  Name: "arg4"
+    98  .  .  .  .  .  .  .  Obj: *ast.Object {
+    99  .  .  .  .  .  .  .  .  Kind: var
+   100  .  .  .  .  .  .  .  .  Name: "arg4"
+   101  .  .  .  .  .  .  .  .  Decl: *(obj @ 92)
+   102  .  .  .  .  .  .  .  .  Data: nil
+   103  .  .  .  .  .  .  .  .  Type: nil
+   104  .  .  .  .  .  .  .  }
+   105  .  .  .  .  .  .  }
+   106  .  .  .  .  .  }
+   107  .  .  .  .  .  Type: *ast.Ident {
+   108  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:34:7
+   109  .  .  .  .  .  .  Name: "sampleStruct"
+   110  .  .  .  .  .  .  Obj: *ast.Object {
+   111  .  .  .  .  .  .  .  Kind: type
+   112  .  .  .  .  .  .  .  Name: "sampleStruct"
+   113  .  .  .  .  .  .  .  Decl: *ast.TypeSpec {
+   114  .  .  .  .  .  .  .  .  Doc: nil
+   115  .  .  .  .  .  .  .  .  Name: *ast.Ident {
+   116  .  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:8:6
+   117  .  .  .  .  .  .  .  .  .  Name: "sampleStruct"
+   118  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 110)
+   119  .  .  .  .  .  .  .  .  }
+   120  .  .  .  .  .  .  .  .  Assign: -
+   121  .  .  .  .  .  .  .  .  Type: *ast.StructType {
+   122  .  .  .  .  .  .  .  .  .  Struct: ./testdata/func.src.go:8:19
+   123  .  .  .  .  .  .  .  .  .  Fields: *ast.FieldList {
+   124  .  .  .  .  .  .  .  .  .  .  Opening: ./testdata/func.src.go:8:26
+   125  .  .  .  .  .  .  .  .  .  .  List: []*ast.Field (len = 2) {
+   126  .  .  .  .  .  .  .  .  .  .  .  0: *ast.Field {
+   127  .  .  .  .  .  .  .  .  .  .  .  .  Doc: nil
+   128  .  .  .  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+   129  .  .  .  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+   130  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:9:2
+   131  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "i"
+   132  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+   133  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+   134  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "i"
+   135  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 126)
+   136  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Data: nil
+   137  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Type: nil
+   138  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+   139  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+   140  .  .  .  .  .  .  .  .  .  .  .  .  }
+   141  .  .  .  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+   142  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:9:4
+   143  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "int"
+   144  .  .  .  .  .  .  .  .  .  .  .  .  .  Obj: nil
+   145  .  .  .  .  .  .  .  .  .  .  .  .  }
+   146  .  .  .  .  .  .  .  .  .  .  .  .  Tag: nil
+   147  .  .  .  .  .  .  .  .  .  .  .  .  Comment: nil
+   148  .  .  .  .  .  .  .  .  .  .  .  }
+   149  .  .  .  .  .  .  .  .  .  .  .  1: *ast.Field {
+   150  .  .  .  .  .  .  .  .  .  .  .  .  Doc: nil
+   151  .  .  .  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+   152  .  .  .  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+   153  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:10:2
+   154  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "s"
+   155  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+   156  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+   157  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "s"
+   158  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 149)
+   159  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Data: nil
+   160  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Type: nil
+   161  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+   162  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+   163  .  .  .  .  .  .  .  .  .  .  .  .  }
+   164  .  .  .  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+   165  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:10:4
+   166  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "string"
+   167  .  .  .  .  .  .  .  .  .  .  .  .  .  Obj: nil
+   168  .  .  .  .  .  .  .  .  .  .  .  .  }
+   169  .  .  .  .  .  .  .  .  .  .  .  .  Tag: nil
+   170  .  .  .  .  .  .  .  .  .  .  .  .  Comment: nil
+   171  .  .  .  .  .  .  .  .  .  .  .  }
+   172  .  .  .  .  .  .  .  .  .  .  }
+   173  .  .  .  .  .  .  .  .  .  .  Closing: ./testdata/func.src.go:11:1
+   174  .  .  .  .  .  .  .  .  .  }
+   175  .  .  .  .  .  .  .  .  .  Incomplete: false
+   176  .  .  .  .  .  .  .  .  }
+   177  .  .  .  .  .  .  .  .  Comment: nil
+   178  .  .  .  .  .  .  .  }
+   179  .  .  .  .  .  .  .  Data: nil
+   180  .  .  .  .  .  .  .  Type: nil
+   181  .  .  .  .  .  .  }
+   182  .  .  .  .  .  }
+   183  .  .  .  .  .  Tag: nil
+   184  .  .  .  .  .  Comment: nil
+   185  .  .  .  .  }
+   186  .  .  .  .  4: *ast.Field {
+   187  .  .  .  .  .  Doc: nil
+   188  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+   189  .  .  .  .  .  .  0: *ast.Ident {
+   190  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:35:2
+   191  .  .  .  .  .  .  .  Name: "arg5"
+   192  .  .  .  .  .  .  .  Obj: *ast.Object {
+   193  .  .  .  .  .  .  .  .  Kind: var
+   194  .  .  .  .  .  .  .  .  Name: "arg5"
+   195  .  .  .  .  .  .  .  .  Decl: *(obj @ 186)
+   196  .  .  .  .  .  .  .  .  Data: nil
+   197  .  .  .  .  .  .  .  .  Type: nil
+   198  .  .  .  .  .  .  .  }
+   199  .  .  .  .  .  .  }
+   200  .  .  .  .  .  }
+   201  .  .  .  .  .  Type: *ast.StarExpr {
+   202  .  .  .  .  .  .  Star: ./testdata/func.src.go:35:7
+   203  .  .  .  .  .  .  X: *ast.Ident {
+   204  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:35:8
+   205  .  .  .  .  .  .  .  Name: "int"
+   206  .  .  .  .  .  .  .  Obj: nil
+   207  .  .  .  .  .  .  }
+   208  .  .  .  .  .  }
+   209  .  .  .  .  .  Tag: nil
+   210  .  .  .  .  .  Comment: nil
+   211  .  .  .  .  }
+   212  .  .  .  .  5: *ast.Field {
+   213  .  .  .  .  .  Doc: nil
+   214  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+   215  .  .  .  .  .  .  0: *ast.Ident {
+   216  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:36:2
+   217  .  .  .  .  .  .  .  Name: "arg6"
+   218  .  .  .  .  .  .  .  Obj: *ast.Object {
+   219  .  .  .  .  .  .  .  .  Kind: var
+   220  .  .  .  .  .  .  .  .  Name: "arg6"
+   221  .  .  .  .  .  .  .  .  Decl: *(obj @ 212)
+   222  .  .  .  .  .  .  .  .  Data: nil
+   223  .  .  .  .  .  .  .  .  Type: nil
+   224  .  .  .  .  .  .  .  }
+   225  .  .  .  .  .  .  }
+   226  .  .  .  .  .  }
+   227  .  .  .  .  .  Type: *ast.ArrayType {
+   228  .  .  .  .  .  .  Lbrack: ./testdata/func.src.go:36:7
+   229  .  .  .  .  .  .  Len: nil
+   230  .  .  .  .  .  .  Elt: *ast.StarExpr {
+   231  .  .  .  .  .  .  .  Star: ./testdata/func.src.go:36:9
+   232  .  .  .  .  .  .  .  X: *ast.Ident {
+   233  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:36:10
+   234  .  .  .  .  .  .  .  .  Name: "string"
+   235  .  .  .  .  .  .  .  .  Obj: nil
+   236  .  .  .  .  .  .  .  }
+   237  .  .  .  .  .  .  }
+   238  .  .  .  .  .  }
+   239  .  .  .  .  .  Tag: nil
+   240  .  .  .  .  .  Comment: nil
+   241  .  .  .  .  }
+   242  .  .  .  .  6: *ast.Field {
+   243  .  .  .  .  .  Doc: nil
+   244  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+   245  .  .  .  .  .  .  0: *ast.Ident {
+   246  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:37:2
+   247  .  .  .  .  .  .  .  Name: "arg7"
+   248  .  .  .  .  .  .  .  Obj: *ast.Object {
+   249  .  .  .  .  .  .  .  .  Kind: var
+   250  .  .  .  .  .  .  .  .  Name: "arg7"
+   251  .  .  .  .  .  .  .  .  Decl: *(obj @ 242)
+   252  .  .  .  .  .  .  .  .  Data: nil
+   253  .  .  .  .  .  .  .  .  Type: nil
+   254  .  .  .  .  .  .  .  }
+   255  .  .  .  .  .  .  }
+   256  .  .  .  .  .  }
+   257  .  .  .  .  .  Type: *ast.ChanType {
+   258  .  .  .  .  .  .  Begin: ./testdata/func.src.go:37:7
+   259  .  .  .  .  .  .  Arrow: -
+   260  .  .  .  .  .  .  Dir: 3
+   261  .  .  .  .  .  .  Value: *ast.Ident {
+   262  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:37:12
+   263  .  .  .  .  .  .  .  Name: "string"
+   264  .  .  .  .  .  .  .  Obj: nil
+   265  .  .  .  .  .  .  }
+   266  .  .  .  .  .  }
+   267  .  .  .  .  .  Tag: nil
+   268  .  .  .  .  .  Comment: nil
+   269  .  .  .  .  }
+   270  .  .  .  .  7: *ast.Field {
+   271  .  .  .  .  .  Doc: nil
+   272  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+   273  .  .  .  .  .  .  0: *ast.Ident {
+   274  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:38:2
+   275  .  .  .  .  .  .  .  Name: "arg8"
+   276  .  .  .  .  .  .  .  Obj: *ast.Object {
+   277  .  .  .  .  .  .  .  .  Kind: var
+   278  .  .  .  .  .  .  .  .  Name: "arg8"
+   279  .  .  .  .  .  .  .  .  Decl: *(obj @ 270)
+   280  .  .  .  .  .  .  .  .  Data: nil
+   281  .  .  .  .  .  .  .  .  Type: nil
+   282  .  .  .  .  .  .  .  }
+   283  .  .  .  .  .  .  }
+   284  .  .  .  .  .  }
+   285  .  .  .  .  .  Type: *ast.Ident {
+   286  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:38:7
+   287  .  .  .  .  .  .  Name: "constType"
+   288  .  .  .  .  .  .  Obj: *ast.Object {
+   289  .  .  .  .  .  .  .  Kind: type
+   290  .  .  .  .  .  .  .  Name: "constType"
+   291  .  .  .  .  .  .  .  Decl: *ast.TypeSpec {
+   292  .  .  .  .  .  .  .  .  Doc: nil
+   293  .  .  .  .  .  .  .  .  Name: *ast.Ident {
+   294  .  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:13:6
+   295  .  .  .  .  .  .  .  .  .  Name: "constType"
+   296  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 288)
+   297  .  .  .  .  .  .  .  .  }
+   298  .  .  .  .  .  .  .  .  Assign: -
+   299  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+   300  .  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:13:16
+   301  .  .  .  .  .  .  .  .  .  Name: "int"
+   302  .  .  .  .  .  .  .  .  .  Obj: nil
+   303  .  .  .  .  .  .  .  .  }
+   304  .  .  .  .  .  .  .  .  Comment: nil
+   305  .  .  .  .  .  .  .  }
+   306  .  .  .  .  .  .  .  Data: nil
+   307  .  .  .  .  .  .  .  Type: nil
+   308  .  .  .  .  .  .  }
+   309  .  .  .  .  .  }
+   310  .  .  .  .  .  Tag: nil
+   311  .  .  .  .  .  Comment: nil
+   312  .  .  .  .  }
+   313  .  .  .  .  8: *ast.Field {
+   314  .  .  .  .  .  Doc: nil
+   315  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+   316  .  .  .  .  .  .  0: *ast.Ident {
+   317  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:39:2
+   318  .  .  .  .  .  .  .  Name: "arg9"
+   319  .  .  .  .  .  .  .  Obj: *ast.Object {
+   320  .  .  .  .  .  .  .  .  Kind: var
+   321  .  .  .  .  .  .  .  .  Name: "arg9"
+   322  .  .  .  .  .  .  .  .  Decl: *(obj @ 313)
+   323  .  .  .  .  .  .  .  .  Data: nil
+   324  .  .  .  .  .  .  .  .  Type: nil
+   325  .  .  .  .  .  .  .  }
+   326  .  .  .  .  .  .  }
+   327  .  .  .  .  .  }
+   328  .  .  .  .  .  Type: *ast.ArrayType {
+   329  .  .  .  .  .  .  Lbrack: ./testdata/func.src.go:39:7
+   330  .  .  .  .  .  .  Len: nil
+   331  .  .  .  .  .  .  Elt: *ast.Ident {
+   332  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:39:9
+   333  .  .  .  .  .  .  .  Name: "constType"
+   334  .  .  .  .  .  .  .  Obj: *(obj @ 288)
+   335  .  .  .  .  .  .  }
+   336  .  .  .  .  .  }
+   337  .  .  .  .  .  Tag: nil
+   338  .  .  .  .  .  Comment: nil
+   339  .  .  .  .  }
+   340  .  .  .  .  9: *ast.Field {
+   341  .  .  .  .  .  Doc: nil
+   342  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+   343  .  .  .  .  .  .  0: *ast.Ident {
+   344  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:40:2
+   345  .  .  .  .  .  .  .  Name: "arg10"
+   346  .  .  .  .  .  .  .  Obj: *ast.Object {
+   347  .  .  .  .  .  .  .  .  Kind: var
+   348  .  .  .  .  .  .  .  .  Name: "arg10"
+   349  .  .  .  .  .  .  .  .  Decl: *(obj @ 340)
+   350  .  .  .  .  .  .  .  .  Data: nil
+   351  .  .  .  .  .  .  .  .  Type: nil
+   352  .  .  .  .  .  .  .  }
+   353  .  .  .  .  .  .  }
+   354  .  .  .  .  .  }
+   355  .  .  .  .  .  Type: *ast.MapType {
+   356  .  .  .  .  .  .  Map: ./testdata/func.src.go:40:8
+   357  .  .  .  .  .  .  Key: *ast.Ident {
+   358  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:40:12
+   359  .  .  .  .  .  .  .  Name: "int"
+   360  .  .  .  .  .  .  .  Obj: nil
+   361  .  .  .  .  .  .  }
+   362  .  .  .  .  .  .  Value: *ast.ChanType {
+   363  .  .  .  .  .  .  .  Begin: ./testdata/func.src.go:40:16
+   364  .  .  .  .  .  .  .  Arrow: -
+   365  .  .  .  .  .  .  .  Dir: 3
+   366  .  .  .  .  .  .  .  Value: *ast.Ident {
+   367  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:40:21
+   368  .  .  .  .  .  .  .  .  Name: "string"
+   369  .  .  .  .  .  .  .  .  Obj: nil
+   370  .  .  .  .  .  .  .  }
+   371  .  .  .  .  .  .  }
+   372  .  .  .  .  .  }
+   373  .  .  .  .  .  Tag: nil
+   374  .  .  .  .  .  Comment: nil
+   375  .  .  .  .  }
+   376  .  .  .  .  10: *ast.Field {
+   377  .  .  .  .  .  Doc: nil
+   378  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+   379  .  .  .  .  .  .  0: *ast.Ident {
+   380  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:41:2
+   381  .  .  .  .  .  .  .  Name: "arg11"
+   382  .  .  .  .  .  .  .  Obj: *ast.Object {
+   383  .  .  .  .  .  .  .  .  Kind: var
+   384  .  .  .  .  .  .  .  .  Name: "arg11"
+   385  .  .  .  .  .  .  .  .  Decl: *(obj @ 376)
+   386  .  .  .  .  .  .  .  .  Data: nil
+   387  .  .  .  .  .  .  .  .  Type: nil
+   388  .  .  .  .  .  .  .  }
+   389  .  .  .  .  .  .  }
+   390  .  .  .  .  .  }
+   391  .  .  .  .  .  Type: *ast.MapType {
+   392  .  .  .  .  .  .  Map: ./testdata/func.src.go:41:8
+   393  .  .  .  .  .  .  Key: *ast.Ident {
+   394  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:41:12
+   395  .  .  .  .  .  .  .  Name: "constType"
+   396  .  .  .  .  .  .  .  Obj: *(obj @ 288)
+   397  .  .  .  .  .  .  }
+   398  .  .  .  .  .  .  Value: *ast.StarExpr {
+   399  .  .  .  .  .  .  .  Star: ./testdata/func.src.go:41:22
+   400  .  .  .  .  .  .  .  X: *ast.Ident {
+   401  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:41:23
+   402  .  .  .  .  .  .  .  .  Name: "int"
+   403  .  .  .  .  .  .  .  .  Obj: nil
+   404  .  .  .  .  .  .  .  }
+   405  .  .  .  .  .  .  }
+   406  .  .  .  .  .  }
+   407  .  .  .  .  .  Tag: nil
+   408  .  .  .  .  .  Comment: nil
+   409  .  .  .  .  }
+   410  .  .  .  .  11: *ast.Field {
+   411  .  .  .  .  .  Doc: nil
+   412  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+   413  .  .  .  .  .  .  0: *ast.Ident {
+   414  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:42:2
+   415  .  .  .  .  .  .  .  Name: "arg12"
+   416  .  .  .  .  .  .  .  Obj: *ast.Object {
+   417  .  .  .  .  .  .  .  .  Kind: var
+   418  .  .  .  .  .  .  .  .  Name: "arg12"
+   419  .  .  .  .  .  .  .  .  Decl: *(obj @ 410)
+   420  .  .  .  .  .  .  .  .  Data: nil
+   421  .  .  .  .  .  .  .  .  Type: nil
+   422  .  .  .  .  .  .  .  }
+   423  .  .  .  .  .  .  }
+   424  .  .  .  .  .  }
+   425  .  .  .  .  .  Type: *ast.StarExpr {
+   426  .  .  .  .  .  .  Star: ./testdata/func.src.go:42:8
+   427  .  .  .  .  .  .  X: *ast.MapType {
+   428  .  .  .  .  .  .  .  Map: ./testdata/func.src.go:42:9
+   429  .  .  .  .  .  .  .  Key: *ast.SelectorExpr {
+   430  .  .  .  .  .  .  .  .  X: *ast.Ident {
+   431  .  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:42:13
+   432  .  .  .  .  .  .  .  .  .  Name: "time"
+   433  .  .  .  .  .  .  .  .  .  Obj: nil
+   434  .  .  .  .  .  .  .  .  }
+   435  .  .  .  .  .  .  .  .  Sel: *ast.Ident {
+   436  .  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:42:18
+   437  .  .  .  .  .  .  .  .  .  Name: "Time"
+   438  .  .  .  .  .  .  .  .  .  Obj: nil
+   439  .  .  .  .  .  .  .  .  }
+   440  .  .  .  .  .  .  .  }
+   441  .  .  .  .  .  .  .  Value: *ast.Ident {
+   442  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:42:23
+   443  .  .  .  .  .  .  .  .  Name: "string"
+   444  .  .  .  .  .  .  .  .  Obj: nil
+   445  .  .  .  .  .  .  .  }
+   446  .  .  .  .  .  .  }
+   447  .  .  .  .  .  }
+   448  .  .  .  .  .  Tag: nil
+   449  .  .  .  .  .  Comment: nil
+   450  .  .  .  .  }
+   451  .  .  .  .  12: *ast.Field {
+   452  .  .  .  .  .  Doc: nil
+   453  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+   454  .  .  .  .  .  .  0: *ast.Ident {
+   455  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:43:2
+   456  .  .  .  .  .  .  .  Name: "arg13"
+   457  .  .  .  .  .  .  .  Obj: *ast.Object {
+   458  .  .  .  .  .  .  .  .  Kind: var
+   459  .  .  .  .  .  .  .  .  Name: "arg13"
+   460  .  .  .  .  .  .  .  .  Decl: *(obj @ 451)
+   461  .  .  .  .  .  .  .  .  Data: nil
+   462  .  .  .  .  .  .  .  .  Type: nil
+   463  .  .  .  .  .  .  .  }
+   464  .  .  .  .  .  .  }
+   465  .  .  .  .  .  }
+   466  .  .  .  .  .  Type: *ast.FuncType {
+   467  .  .  .  .  .  .  Func: ./testdata/func.src.go:43:8
+   468  .  .  .  .  .  .  Params: *ast.FieldList {
+   469  .  .  .  .  .  .  .  Opening: ./testdata/func.src.go:43:12
+   470  .  .  .  .  .  .  .  List: []*ast.Field (len = 1) {
+   471  .  .  .  .  .  .  .  .  0: *ast.Field {
+   472  .  .  .  .  .  .  .  .  .  Doc: nil
+   473  .  .  .  .  .  .  .  .  .  Names: nil
+   474  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+   475  .  .  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:43:13
+   476  .  .  .  .  .  .  .  .  .  .  Name: "int"
+   477  .  .  .  .  .  .  .  .  .  .  Obj: nil
+   478  .  .  .  .  .  .  .  .  .  }
+   479  .  .  .  .  .  .  .  .  .  Tag: nil
+   480  .  .  .  .  .  .  .  .  .  Comment: nil
+   481  .  .  .  .  .  .  .  .  }
+   482  .  .  .  .  .  .  .  }
+   483  .  .  .  .  .  .  .  Closing: ./testdata/func.src.go:43:16
+   484  .  .  .  .  .  .  }
+   485  .  .  .  .  .  .  Results: *ast.FieldList {
+   486  .  .  .  .  .  .  .  Opening: -
+   487  .  .  .  .  .  .  .  List: []*ast.Field (len = 1) {
+   488  .  .  .  .  .  .  .  .  0: *ast.Field {
+   489  .  .  .  .  .  .  .  .  .  Doc: nil
+   490  .  .  .  .  .  .  .  .  .  Names: nil
+   491  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+   492  .  .  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:43:18
+   493  .  .  .  .  .  .  .  .  .  .  Name: "error"
+   494  .  .  .  .  .  .  .  .  .  .  Obj: nil
+   495  .  .  .  .  .  .  .  .  .  }
+   496  .  .  .  .  .  .  .  .  .  Tag: nil
+   497  .  .  .  .  .  .  .  .  .  Comment: nil
+   498  .  .  .  .  .  .  .  .  }
+   499  .  .  .  .  .  .  .  }
+   500  .  .  .  .  .  .  .  Closing: -
+   501  .  .  .  .  .  .  }
+   502  .  .  .  .  .  }
+   503  .  .  .  .  .  Tag: nil
+   504  .  .  .  .  .  Comment: nil
+   505  .  .  .  .  }
+   506  .  .  .  .  13: *ast.Field {
+   507  .  .  .  .  .  Doc: nil
+   508  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+   509  .  .  .  .  .  .  0: *ast.Ident {
+   510  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:44:2
+   511  .  .  .  .  .  .  .  Name: "arg14"
+   512  .  .  .  .  .  .  .  Obj: *ast.Object {
+   513  .  .  .  .  .  .  .  .  Kind: var
+   514  .  .  .  .  .  .  .  .  Name: "arg14"
+   515  .  .  .  .  .  .  .  .  Decl: *(obj @ 506)
+   516  .  .  .  .  .  .  .  .  Data: nil
+   517  .  .  .  .  .  .  .  .  Type: nil
+   518  .  .  .  .  .  .  .  }
+   519  .  .  .  .  .  .  }
+   520  .  .  .  .  .  }
+   521  .  .  .  .  .  Type: *ast.ArrayType {
+   522  .  .  .  .  .  .  Lbrack: ./testdata/func.src.go:44:8
+   523  .  .  .  .  .  .  Len: nil
+   524  .  .  .  .  .  .  Elt: *ast.StarExpr {
+   525  .  .  .  .  .  .  .  Star: ./testdata/func.src.go:44:10
+   526  .  .  .  .  .  .  .  X: *ast.FuncType {
+   527  .  .  .  .  .  .  .  .  Func: ./testdata/func.src.go:44:11
+   528  .  .  .  .  .  .  .  .  Params: *ast.FieldList {
+   529  .  .  .  .  .  .  .  .  .  Opening: ./testdata/func.src.go:44:15
+   530  .  .  .  .  .  .  .  .  .  List: []*ast.Field (len = 1) {
+   531  .  .  .  .  .  .  .  .  .  .  0: *ast.Field {
+   532  .  .  .  .  .  .  .  .  .  .  .  Doc: nil
+   533  .  .  .  .  .  .  .  .  .  .  .  Names: nil
+   534  .  .  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+   535  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:44:16
+   536  .  .  .  .  .  .  .  .  .  .  .  .  Name: "string"
+   537  .  .  .  .  .  .  .  .  .  .  .  .  Obj: nil
+   538  .  .  .  .  .  .  .  .  .  .  .  }
+   539  .  .  .  .  .  .  .  .  .  .  .  Tag: nil
+   540  .  .  .  .  .  .  .  .  .  .  .  Comment: nil
+   541  .  .  .  .  .  .  .  .  .  .  }
+   542  .  .  .  .  .  .  .  .  .  }
+   543  .  .  .  .  .  .  .  .  .  Closing: ./testdata/func.src.go:44:22
+   544  .  .  .  .  .  .  .  .  }
+   545  .  .  .  .  .  .  .  .  Results: nil
+   546  .  .  .  .  .  .  .  }
+   547  .  .  .  .  .  .  }
+   548  .  .  .  .  .  }
+   549  .  .  .  .  .  Tag: nil
+   550  .  .  .  .  .  Comment: nil
+   551  .  .  .  .  }
+   552  .  .  .  .  14: *ast.Field {
+   553  .  .  .  .  .  Doc: nil
+   554  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+   555  .  .  .  .  .  .  0: *ast.Ident {
+   556  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:45:2
+   557  .  .  .  .  .  .  .  Name: "arg15"
+   558  .  .  .  .  .  .  .  Obj: *ast.Object {
+   559  .  .  .  .  .  .  .  .  Kind: var
+   560  .  .  .  .  .  .  .  .  Name: "arg15"
+   561  .  .  .  .  .  .  .  .  Decl: *(obj @ 552)
+   562  .  .  .  .  .  .  .  .  Data: nil
+   563  .  .  .  .  .  .  .  .  Type: nil
+   564  .  .  .  .  .  .  .  }
+   565  .  .  .  .  .  .  }
+   566  .  .  .  .  .  }
+   567  .  .  .  .  .  Type: *ast.MapType {
+   568  .  .  .  .  .  .  Map: ./testdata/func.src.go:45:8
+   569  .  .  .  .  .  .  Key: *ast.Ident {
+   570  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:45:12
+   571  .  .  .  .  .  .  .  Name: "int"
+   572  .  .  .  .  .  .  .  Obj: nil
+   573  .  .  .  .  .  .  }
+   574  .  .  .  .  .  .  Value: *ast.FuncType {
+   575  .  .  .  .  .  .  .  Func: ./testdata/func.src.go:45:16
+   576  .  .  .  .  .  .  .  Params: *ast.FieldList {
+   577  .  .  .  .  .  .  .  .  Opening: ./testdata/func.src.go:45:20
+   578  .  .  .  .  .  .  .  .  List: []*ast.Field (len = 1) {
+   579  .  .  .  .  .  .  .  .  .  0: *ast.Field {
+   580  .  .  .  .  .  .  .  .  .  .  Doc: nil
+   581  .  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+   582  .  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+   583  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:45:21
+   584  .  .  .  .  .  .  .  .  .  .  .  .  Name: "sampleStruct2"
+   585  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+   586  .  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+   587  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "sampleStruct2"
+   588  .  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 579)
+   589  .  .  .  .  .  .  .  .  .  .  .  .  .  Data: nil
+   590  .  .  .  .  .  .  .  .  .  .  .  .  .  Type: nil
+   591  .  .  .  .  .  .  .  .  .  .  .  .  }
+   592  .  .  .  .  .  .  .  .  .  .  .  }
+   593  .  .  .  .  .  .  .  .  .  .  }
+   594  .  .  .  .  .  .  .  .  .  .  Type: *ast.StarExpr {
+   595  .  .  .  .  .  .  .  .  .  .  .  Star: ./testdata/func.src.go:45:35
+   596  .  .  .  .  .  .  .  .  .  .  .  X: *ast.Ident {
+   597  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:45:36
+   598  .  .  .  .  .  .  .  .  .  .  .  .  Name: "sampleStruct"
+   599  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 110)
+   600  .  .  .  .  .  .  .  .  .  .  .  }
+   601  .  .  .  .  .  .  .  .  .  .  }
+   602  .  .  .  .  .  .  .  .  .  .  Tag: nil
+   603  .  .  .  .  .  .  .  .  .  .  Comment: nil
+   604  .  .  .  .  .  .  .  .  .  }
+   605  .  .  .  .  .  .  .  .  }
+   606  .  .  .  .  .  .  .  .  Closing: ./testdata/func.src.go:45:48
+   607  .  .  .  .  .  .  .  }
+   608  .  .  .  .  .  .  .  Results: nil
+   609  .  .  .  .  .  .  }
+   610  .  .  .  .  .  }
+   611  .  .  .  .  .  Tag: nil
+   612  .  .  .  .  .  Comment: nil
+   613  .  .  .  .  }
+   614  .  .  .  .  15: *ast.Field {
+   615  .  .  .  .  .  Doc: nil
+   616  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+   617  .  .  .  .  .  .  0: *ast.Ident {
+   618  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:46:2
+   619  .  .  .  .  .  .  .  Name: "arg16"
+   620  .  .  .  .  .  .  .  Obj: *ast.Object {
+   621  .  .  .  .  .  .  .  .  Kind: var
+   622  .  .  .  .  .  .  .  .  Name: "arg16"
+   623  .  .  .  .  .  .  .  .  Decl: *(obj @ 614)
+   624  .  .  .  .  .  .  .  .  Data: nil
+   625  .  .  .  .  .  .  .  .  Type: nil
+   626  .  .  .  .  .  .  .  }
+   627  .  .  .  .  .  .  }
+   628  .  .  .  .  .  }
+   629  .  .  .  .  .  Type: *ast.ChanType {
+   630  .  .  .  .  .  .  Begin: ./testdata/func.src.go:46:8
+   631  .  .  .  .  .  .  Arrow: -
+   632  .  .  .  .  .  .  Dir: 3
+   633  .  .  .  .  .  .  Value: *ast.StarExpr {
+   634  .  .  .  .  .  .  .  Star: ./testdata/func.src.go:46:13
+   635  .  .  .  .  .  .  .  X: *ast.Ident {
+   636  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:46:14
+   637  .  .  .  .  .  .  .  .  Name: "string"
+   638  .  .  .  .  .  .  .  .  Obj: nil
+   639  .  .  .  .  .  .  .  }
+   640  .  .  .  .  .  .  }
+   641  .  .  .  .  .  }
+   642  .  .  .  .  .  Tag: nil
+   643  .  .  .  .  .  Comment: nil
+   644  .  .  .  .  }
+   645  .  .  .  .  16: *ast.Field {
+   646  .  .  .  .  .  Doc: nil
+   647  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+   648  .  .  .  .  .  .  0: *ast.Ident {
+   649  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:47:2
+   650  .  .  .  .  .  .  .  Name: "arg17"
+   651  .  .  .  .  .  .  .  Obj: *ast.Object {
+   652  .  .  .  .  .  .  .  .  Kind: var
+   653  .  .  .  .  .  .  .  .  Name: "arg17"
+   654  .  .  .  .  .  .  .  .  Decl: *(obj @ 645)
+   655  .  .  .  .  .  .  .  .  Data: nil
+   656  .  .  .  .  .  .  .  .  Type: nil
+   657  .  .  .  .  .  .  .  }
+   658  .  .  .  .  .  .  }
+   659  .  .  .  .  .  }
+   660  .  .  .  .  .  Type: *ast.MapType {
+   661  .  .  .  .  .  .  Map: ./testdata/func.src.go:47:8
+   662  .  .  .  .  .  .  Key: *ast.ChanType {
+   663  .  .  .  .  .  .  .  Begin: ./testdata/func.src.go:47:12
+   664  .  .  .  .  .  .  .  Arrow: -
+   665  .  .  .  .  .  .  .  Dir: 3
+   666  .  .  .  .  .  .  .  Value: *ast.StarExpr {
+   667  .  .  .  .  .  .  .  .  Star: ./testdata/func.src.go:47:17
+   668  .  .  .  .  .  .  .  .  X: *ast.Ident {
+   669  .  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:47:18
+   670  .  .  .  .  .  .  .  .  .  Name: "int"
+   671  .  .  .  .  .  .  .  .  .  Obj: nil
+   672  .  .  .  .  .  .  .  .  }
+   673  .  .  .  .  .  .  .  }
+   674  .  .  .  .  .  .  }
+   675  .  .  .  .  .  .  Value: *ast.StarExpr {
+   676  .  .  .  .  .  .  .  Star: ./testdata/func.src.go:47:22
+   677  .  .  .  .  .  .  .  X: *ast.Ident {
+   678  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:47:23
+   679  .  .  .  .  .  .  .  .  Name: "sampleStruct"
+   680  .  .  .  .  .  .  .  .  Obj: *(obj @ 110)
+   681  .  .  .  .  .  .  .  }
+   682  .  .  .  .  .  .  }
+   683  .  .  .  .  .  }
+   684  .  .  .  .  .  Tag: nil
+   685  .  .  .  .  .  Comment: nil
+   686  .  .  .  .  }
+   687  .  .  .  .  17: *ast.Field {
+   688  .  .  .  .  .  Doc: nil
+   689  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+   690  .  .  .  .  .  .  0: *ast.Ident {
+   691  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:48:2
+   692  .  .  .  .  .  .  .  Name: "arg18"
+   693  .  .  .  .  .  .  .  Obj: *ast.Object {
+   694  .  .  .  .  .  .  .  .  Kind: var
+   695  .  .  .  .  .  .  .  .  Name: "arg18"
+   696  .  .  .  .  .  .  .  .  Decl: *(obj @ 687)
+   697  .  .  .  .  .  .  .  .  Data: nil
+   698  .  .  .  .  .  .  .  .  Type: nil
+   699  .  .  .  .  .  .  .  }
+   700  .  .  .  .  .  .  }
+   701  .  .  .  .  .  }
+   702  .  .  .  .  .  Type: *ast.MapType {
+   703  .  .  .  .  .  .  Map: ./testdata/func.src.go:48:8
+   704  .  .  .  .  .  .  Key: *ast.Ident {
+   705  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:48:12
+   706  .  .  .  .  .  .  .  Name: "string"
+   707  .  .  .  .  .  .  .  Obj: nil
+   708  .  .  .  .  .  .  }
+   709  .  .  .  .  .  .  Value: *ast.MapType {
+   710  .  .  .  .  .  .  .  Map: ./testdata/func.src.go:48:19
+   711  .  .  .  .  .  .  .  Key: *ast.StarExpr {
+   712  .  .  .  .  .  .  .  .  Star: ./testdata/func.src.go:48:23
+   713  .  .  .  .  .  .  .  .  X: *ast.FuncType {
+   714  .  .  .  .  .  .  .  .  .  Func: ./testdata/func.src.go:48:24
+   715  .  .  .  .  .  .  .  .  .  Params: *ast.FieldList {
+   716  .  .  .  .  .  .  .  .  .  .  Opening: ./testdata/func.src.go:48:28
+   717  .  .  .  .  .  .  .  .  .  .  List: nil
+   718  .  .  .  .  .  .  .  .  .  .  Closing: ./testdata/func.src.go:48:29
+   719  .  .  .  .  .  .  .  .  .  }
+   720  .  .  .  .  .  .  .  .  .  Results: nil
+   721  .  .  .  .  .  .  .  .  }
+   722  .  .  .  .  .  .  .  }
+   723  .  .  .  .  .  .  .  Value: *ast.ArrayType {
+   724  .  .  .  .  .  .  .  .  Lbrack: ./testdata/func.src.go:48:31
+   725  .  .  .  .  .  .  .  .  Len: nil
+   726  .  .  .  .  .  .  .  .  Elt: *ast.Ident {
+   727  .  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:48:33
+   728  .  .  .  .  .  .  .  .  .  Name: "int"
+   729  .  .  .  .  .  .  .  .  .  Obj: nil
+   730  .  .  .  .  .  .  .  .  }
+   731  .  .  .  .  .  .  .  }
+   732  .  .  .  .  .  .  }
+   733  .  .  .  .  .  }
+   734  .  .  .  .  .  Tag: nil
+   735  .  .  .  .  .  Comment: nil
+   736  .  .  .  .  }
+   737  .  .  .  .  18: *ast.Field {
+   738  .  .  .  .  .  Doc: nil
+   739  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+   740  .  .  .  .  .  .  0: *ast.Ident {
+   741  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:49:2
+   742  .  .  .  .  .  .  .  Name: "arg19"
+   743  .  .  .  .  .  .  .  Obj: *ast.Object {
+   744  .  .  .  .  .  .  .  .  Kind: var
+   745  .  .  .  .  .  .  .  .  Name: "arg19"
+   746  .  .  .  .  .  .  .  .  Decl: *(obj @ 737)
+   747  .  .  .  .  .  .  .  .  Data: nil
+   748  .  .  .  .  .  .  .  .  Type: nil
+   749  .  .  .  .  .  .  .  }
+   750  .  .  .  .  .  .  }
+   751  .  .  .  .  .  }
+   752  .  .  .  .  .  Type: *ast.ArrayType {
+   753  .  .  .  .  .  .  Lbrack: ./testdata/func.src.go:49:8
+   754  .  .  .  .  .  .  Len: nil
+   755  .  .  .  .  .  .  Elt: *ast.InterfaceType {
+   756  .  .  .  .  .  .  .  Interface: ./testdata/func.src.go:49:10
+   757  .  .  .  .  .  .  .  Methods: *ast.FieldList {
+   758  .  .  .  .  .  .  .  .  Opening: ./testdata/func.src.go:49:19
+   759  .  .  .  .  .  .  .  .  List: nil
+   760  .  .  .  .  .  .  .  .  Closing: ./testdata/func.src.go:49:20
+   761  .  .  .  .  .  .  .  }
+   762  .  .  .  .  .  .  .  Incomplete: false
+   763  .  .  .  .  .  .  }
+   764  .  .  .  .  .  }
+   765  .  .  .  .  .  Tag: nil
+   766  .  .  .  .  .  Comment: nil
+   767  .  .  .  .  }
+   768  .  .  .  .  19: *ast.Field {
+   769  .  .  .  .  .  Doc: nil
+   770  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+   771  .  .  .  .  .  .  0: *ast.Ident {
+   772  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:50:2
+   773  .  .  .  .  .  .  .  Name: "arg20"
+   774  .  .  .  .  .  .  .  Obj: *ast.Object {
+   775  .  .  .  .  .  .  .  .  Kind: var
+   776  .  .  .  .  .  .  .  .  Name: "arg20"
+   777  .  .  .  .  .  .  .  .  Decl: *(obj @ 768)
+   778  .  .  .  .  .  .  .  .  Data: nil
+   779  .  .  .  .  .  .  .  .  Type: nil
+   780  .  .  .  .  .  .  .  }
+   781  .  .  .  .  .  .  }
+   782  .  .  .  .  .  }
+   783  .  .  .  .  .  Type: *ast.MapType {
+   784  .  .  .  .  .  .  Map: ./testdata/func.src.go:50:8
+   785  .  .  .  .  .  .  Key: *ast.InterfaceType {
+   786  .  .  .  .  .  .  .  Interface: ./testdata/func.src.go:50:12
+   787  .  .  .  .  .  .  .  Methods: *ast.FieldList {
+   788  .  .  .  .  .  .  .  .  Opening: ./testdata/func.src.go:50:21
+   789  .  .  .  .  .  .  .  .  List: nil
+   790  .  .  .  .  .  .  .  .  Closing: ./testdata/func.src.go:50:22
+   791  .  .  .  .  .  .  .  }
+   792  .  .  .  .  .  .  .  Incomplete: false
+   793  .  .  .  .  .  .  }
+   794  .  .  .  .  .  .  Value: *ast.ChanType {
+   795  .  .  .  .  .  .  .  Begin: ./testdata/func.src.go:50:24
+   796  .  .  .  .  .  .  .  Arrow: -
+   797  .  .  .  .  .  .  .  Dir: 3
+   798  .  .  .  .  .  .  .  Value: *ast.InterfaceType {
+   799  .  .  .  .  .  .  .  .  Interface: ./testdata/func.src.go:50:29
+   800  .  .  .  .  .  .  .  .  Methods: *ast.FieldList {
+   801  .  .  .  .  .  .  .  .  .  Opening: ./testdata/func.src.go:50:38
+   802  .  .  .  .  .  .  .  .  .  List: nil
+   803  .  .  .  .  .  .  .  .  .  Closing: ./testdata/func.src.go:50:39
+   804  .  .  .  .  .  .  .  .  }
+   805  .  .  .  .  .  .  .  .  Incomplete: false
+   806  .  .  .  .  .  .  .  }
+   807  .  .  .  .  .  .  }
+   808  .  .  .  .  .  }
+   809  .  .  .  .  .  Tag: nil
+   810  .  .  .  .  .  Comment: nil
+   811  .  .  .  .  }
+   812  .  .  .  }
+   813  .  .  .  Closing: ./testdata/func.src.go:51:1
+   814  .  .  }
+   815  .  .  Results: nil
+   816  .  }
+   817  .  Body: *ast.BlockStmt {
+   818  .  .  Lbrace: ./testdata/func.src.go:51:3
+   819  .  .  List: nil
+   820  .  .  Rbrace: ./testdata/func.src.go:53:1
+   821  .  }
+   822  }
+     0  *ast.FuncDecl {
+     1  .  Doc: nil
+     2  .  Recv: *ast.FieldList {
+     3  .  .  Opening: ./testdata/func.src.go:55:6
+     4  .  .  List: []*ast.Field (len = 1) {
+     5  .  .  .  0: *ast.Field {
+     6  .  .  .  .  Doc: nil
+     7  .  .  .  .  Names: []*ast.Ident (len = 1) {
+     8  .  .  .  .  .  0: *ast.Ident {
+     9  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:55:7
+    10  .  .  .  .  .  .  Name: "s"
+    11  .  .  .  .  .  .  Obj: *ast.Object {
+    12  .  .  .  .  .  .  .  Kind: var
+    13  .  .  .  .  .  .  .  Name: "s"
+    14  .  .  .  .  .  .  .  Decl: *(obj @ 5)
+    15  .  .  .  .  .  .  .  Data: nil
+    16  .  .  .  .  .  .  .  Type: nil
+    17  .  .  .  .  .  .  }
+    18  .  .  .  .  .  }
+    19  .  .  .  .  }
+    20  .  .  .  .  Type: *ast.StarExpr {
+    21  .  .  .  .  .  Star: ./testdata/func.src.go:55:9
+    22  .  .  .  .  .  X: *ast.Ident {
+    23  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:55:10
+    24  .  .  .  .  .  .  Name: "sampleStruct"
+    25  .  .  .  .  .  .  Obj: *ast.Object {
+    26  .  .  .  .  .  .  .  Kind: type
+    27  .  .  .  .  .  .  .  Name: "sampleStruct"
+    28  .  .  .  .  .  .  .  Decl: *ast.TypeSpec {
+    29  .  .  .  .  .  .  .  .  Doc: nil
+    30  .  .  .  .  .  .  .  .  Name: *ast.Ident {
+    31  .  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:8:6
+    32  .  .  .  .  .  .  .  .  .  Name: "sampleStruct"
+    33  .  .  .  .  .  .  .  .  .  Obj: *(obj @ 25)
+    34  .  .  .  .  .  .  .  .  }
+    35  .  .  .  .  .  .  .  .  Assign: -
+    36  .  .  .  .  .  .  .  .  Type: *ast.StructType {
+    37  .  .  .  .  .  .  .  .  .  Struct: ./testdata/func.src.go:8:19
+    38  .  .  .  .  .  .  .  .  .  Fields: *ast.FieldList {
+    39  .  .  .  .  .  .  .  .  .  .  Opening: ./testdata/func.src.go:8:26
+    40  .  .  .  .  .  .  .  .  .  .  List: []*ast.Field (len = 2) {
+    41  .  .  .  .  .  .  .  .  .  .  .  0: *ast.Field {
+    42  .  .  .  .  .  .  .  .  .  .  .  .  Doc: nil
+    43  .  .  .  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+    44  .  .  .  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+    45  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:9:2
+    46  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "i"
+    47  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+    48  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+    49  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "i"
+    50  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 41)
+    51  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Data: nil
+    52  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Type: nil
+    53  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+    54  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+    55  .  .  .  .  .  .  .  .  .  .  .  .  }
+    56  .  .  .  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+    57  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:9:4
+    58  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "int"
+    59  .  .  .  .  .  .  .  .  .  .  .  .  .  Obj: nil
+    60  .  .  .  .  .  .  .  .  .  .  .  .  }
+    61  .  .  .  .  .  .  .  .  .  .  .  .  Tag: nil
+    62  .  .  .  .  .  .  .  .  .  .  .  .  Comment: nil
+    63  .  .  .  .  .  .  .  .  .  .  .  }
+    64  .  .  .  .  .  .  .  .  .  .  .  1: *ast.Field {
+    65  .  .  .  .  .  .  .  .  .  .  .  .  Doc: nil
+    66  .  .  .  .  .  .  .  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+    67  .  .  .  .  .  .  .  .  .  .  .  .  .  0: *ast.Ident {
+    68  .  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:10:2
+    69  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "s"
+    70  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Obj: *ast.Object {
+    71  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Kind: var
+    72  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "s"
+    73  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Decl: *(obj @ 64)
+    74  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Data: nil
+    75  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Type: nil
+    76  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+    77  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+    78  .  .  .  .  .  .  .  .  .  .  .  .  }
+    79  .  .  .  .  .  .  .  .  .  .  .  .  Type: *ast.Ident {
+    80  .  .  .  .  .  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:10:4
+    81  .  .  .  .  .  .  .  .  .  .  .  .  .  Name: "string"
+    82  .  .  .  .  .  .  .  .  .  .  .  .  .  Obj: nil
+    83  .  .  .  .  .  .  .  .  .  .  .  .  }
+    84  .  .  .  .  .  .  .  .  .  .  .  .  Tag: nil
+    85  .  .  .  .  .  .  .  .  .  .  .  .  Comment: nil
+    86  .  .  .  .  .  .  .  .  .  .  .  }
+    87  .  .  .  .  .  .  .  .  .  .  }
+    88  .  .  .  .  .  .  .  .  .  .  Closing: ./testdata/func.src.go:11:1
+    89  .  .  .  .  .  .  .  .  .  }
+    90  .  .  .  .  .  .  .  .  .  Incomplete: false
+    91  .  .  .  .  .  .  .  .  }
+    92  .  .  .  .  .  .  .  .  Comment: nil
+    93  .  .  .  .  .  .  .  }
+    94  .  .  .  .  .  .  .  Data: nil
+    95  .  .  .  .  .  .  .  Type: nil
+    96  .  .  .  .  .  .  }
+    97  .  .  .  .  .  }
+    98  .  .  .  .  }
+    99  .  .  .  .  Tag: nil
+   100  .  .  .  .  Comment: nil
+   101  .  .  .  }
+   102  .  .  }
+   103  .  .  Closing: ./testdata/func.src.go:55:22
+   104  .  }
+   105  .  Name: *ast.Ident {
+   106  .  .  NamePos: ./testdata/func.src.go:55:24
+   107  .  .  Name: "test4"
+   108  .  .  Obj: nil
+   109  .  }
+   110  .  Type: *ast.FuncType {
+   111  .  .  Func: ./testdata/func.src.go:55:1
+   112  .  .  Params: *ast.FieldList {
+   113  .  .  .  Opening: ./testdata/func.src.go:55:29
+   114  .  .  .  List: []*ast.Field (len = 1) {
+   115  .  .  .  .  0: *ast.Field {
+   116  .  .  .  .  .  Doc: nil
+   117  .  .  .  .  .  Names: []*ast.Ident (len = 1) {
+   118  .  .  .  .  .  .  0: *ast.Ident {
+   119  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:55:30
+   120  .  .  .  .  .  .  .  Name: "args"
+   121  .  .  .  .  .  .  .  Obj: *ast.Object {
+   122  .  .  .  .  .  .  .  .  Kind: var
+   123  .  .  .  .  .  .  .  .  Name: "args"
+   124  .  .  .  .  .  .  .  .  Decl: *(obj @ 115)
+   125  .  .  .  .  .  .  .  .  Data: nil
+   126  .  .  .  .  .  .  .  .  Type: nil
+   127  .  .  .  .  .  .  .  }
+   128  .  .  .  .  .  .  }
+   129  .  .  .  .  .  }
+   130  .  .  .  .  .  Type: *ast.Ellipsis {
+   131  .  .  .  .  .  .  Ellipsis: ./testdata/func.src.go:55:35
+   132  .  .  .  .  .  .  Elt: *ast.StarExpr {
+   133  .  .  .  .  .  .  .  Star: ./testdata/func.src.go:55:38
+   134  .  .  .  .  .  .  .  X: *ast.Ident {
+   135  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:55:39
+   136  .  .  .  .  .  .  .  .  Name: "string"
+   137  .  .  .  .  .  .  .  .  Obj: nil
+   138  .  .  .  .  .  .  .  }
+   139  .  .  .  .  .  .  }
+   140  .  .  .  .  .  }
+   141  .  .  .  .  .  Tag: nil
+   142  .  .  .  .  .  Comment: nil
+   143  .  .  .  .  }
+   144  .  .  .  }
+   145  .  .  .  Closing: ./testdata/func.src.go:55:45
+   146  .  .  }
+   147  .  .  Results: *ast.FieldList {
+   148  .  .  .  Opening: ./testdata/func.src.go:55:47
+   149  .  .  .  List: []*ast.Field (len = 3) {
+   150  .  .  .  .  0: *ast.Field {
+   151  .  .  .  .  .  Doc: nil
+   152  .  .  .  .  .  Names: nil
+   153  .  .  .  .  .  Type: *ast.Ident {
+   154  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:55:48
+   155  .  .  .  .  .  .  Name: "error"
+   156  .  .  .  .  .  .  Obj: nil
+   157  .  .  .  .  .  }
+   158  .  .  .  .  .  Tag: nil
+   159  .  .  .  .  .  Comment: nil
+   160  .  .  .  .  }
+   161  .  .  .  .  1: *ast.Field {
+   162  .  .  .  .  .  Doc: nil
+   163  .  .  .  .  .  Names: nil
+   164  .  .  .  .  .  Type: *ast.Ident {
+   165  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:55:55
+   166  .  .  .  .  .  .  Name: "string"
+   167  .  .  .  .  .  .  Obj: nil
+   168  .  .  .  .  .  }
+   169  .  .  .  .  .  Tag: nil
+   170  .  .  .  .  .  Comment: nil
+   171  .  .  .  .  }
+   172  .  .  .  .  2: *ast.Field {
+   173  .  .  .  .  .  Doc: nil
+   174  .  .  .  .  .  Names: nil
+   175  .  .  .  .  .  Type: *ast.SelectorExpr {
+   176  .  .  .  .  .  .  X: *ast.Ident {
+   177  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:55:63
+   178  .  .  .  .  .  .  .  Name: "time"
+   179  .  .  .  .  .  .  .  Obj: nil
+   180  .  .  .  .  .  .  }
+   181  .  .  .  .  .  .  Sel: *ast.Ident {
+   182  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:55:68
+   183  .  .  .  .  .  .  .  Name: "Time"
+   184  .  .  .  .  .  .  .  Obj: nil
+   185  .  .  .  .  .  .  }
+   186  .  .  .  .  .  }
+   187  .  .  .  .  .  Tag: nil
+   188  .  .  .  .  .  Comment: nil
+   189  .  .  .  .  }
+   190  .  .  .  }
+   191  .  .  .  Closing: ./testdata/func.src.go:55:72
+   192  .  .  }
+   193  .  }
+   194  .  Body: *ast.BlockStmt {
+   195  .  .  Lbrace: ./testdata/func.src.go:55:74
+   196  .  .  List: []ast.Stmt (len = 1) {
+   197  .  .  .  0: *ast.ReturnStmt {
+   198  .  .  .  .  Return: ./testdata/func.src.go:57:2
+   199  .  .  .  .  Results: []ast.Expr (len = 3) {
+   200  .  .  .  .  .  0: *ast.CallExpr {
+   201  .  .  .  .  .  .  Fun: *ast.SelectorExpr {
+   202  .  .  .  .  .  .  .  X: *ast.Ident {
+   203  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:57:9
+   204  .  .  .  .  .  .  .  .  Name: "fmt"
+   205  .  .  .  .  .  .  .  .  Obj: nil
+   206  .  .  .  .  .  .  .  }
+   207  .  .  .  .  .  .  .  Sel: *ast.Ident {
+   208  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:57:13
+   209  .  .  .  .  .  .  .  .  Name: "Errorf"
+   210  .  .  .  .  .  .  .  .  Obj: nil
+   211  .  .  .  .  .  .  .  }
+   212  .  .  .  .  .  .  }
+   213  .  .  .  .  .  .  Lparen: ./testdata/func.src.go:57:19
+   214  .  .  .  .  .  .  Args: []ast.Expr (len = 1) {
+   215  .  .  .  .  .  .  .  0: *ast.BasicLit {
+   216  .  .  .  .  .  .  .  .  ValuePos: ./testdata/func.src.go:57:20
+   217  .  .  .  .  .  .  .  .  Kind: STRING
+   218  .  .  .  .  .  .  .  .  Value: "\"\""
+   219  .  .  .  .  .  .  .  }
+   220  .  .  .  .  .  .  }
+   221  .  .  .  .  .  .  Ellipsis: -
+   222  .  .  .  .  .  .  Rparen: ./testdata/func.src.go:57:22
+   223  .  .  .  .  .  }
+   224  .  .  .  .  .  1: *ast.BasicLit {
+   225  .  .  .  .  .  .  ValuePos: ./testdata/func.src.go:57:25
+   226  .  .  .  .  .  .  Kind: STRING
+   227  .  .  .  .  .  .  Value: "\"\""
+   228  .  .  .  .  .  }
+   229  .  .  .  .  .  2: *ast.CallExpr {
+   230  .  .  .  .  .  .  Fun: *ast.SelectorExpr {
+   231  .  .  .  .  .  .  .  X: *ast.Ident {
+   232  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:57:29
+   233  .  .  .  .  .  .  .  .  Name: "time"
+   234  .  .  .  .  .  .  .  .  Obj: nil
+   235  .  .  .  .  .  .  .  }
+   236  .  .  .  .  .  .  .  Sel: *ast.Ident {
+   237  .  .  .  .  .  .  .  .  NamePos: ./testdata/func.src.go:57:34
+   238  .  .  .  .  .  .  .  .  Name: "Now"
+   239  .  .  .  .  .  .  .  .  Obj: nil
+   240  .  .  .  .  .  .  .  }
+   241  .  .  .  .  .  .  }
+   242  .  .  .  .  .  .  Lparen: ./testdata/func.src.go:57:37
+   243  .  .  .  .  .  .  Args: nil
+   244  .  .  .  .  .  .  Ellipsis: -
+   245  .  .  .  .  .  .  Rparen: ./testdata/func.src.go:57:38
+   246  .  .  .  .  .  }
+   247  .  .  .  .  }
+   248  .  .  .  }
+   249  .  .  }
+   250  .  .  Rbrace: ./testdata/func.src.go:58:1
+   251  .  }
+   252  }
